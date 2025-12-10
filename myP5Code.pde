@@ -8,12 +8,39 @@ void setup() {
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
   fill(255,255,255);
-  strokeWeight(1);
+  strokeWeight(3);
+  stroke(231, 125, 181);
 
   //💡⬇️⬇️⬇️💡 Your Code For This Project Goes Here
   
-
+  //body
+  fill(248, 185, 204);
+  ellipse(175,240,150,100);
+  ellipse(145,235,100,100);
+  noStroke();
+  ellipse(175,240,150,97);
+  strokeWeight(3);
+  stroke(231, 125, 181);
+  ellipse(210,235,80,95);
+  noStroke();
+  ellipse(183,227,60,70);
   
+  //head
+  strokeWeight(3);
+  stroke(231, 125, 181);
+  ellipse(123,130,125,125);
+  ellipse(102,150,80,80);
+  fill(255,255,255);
+  ellipse(65,160,45,48);
+  noStroke();
+  ellipse(50,180,50,45);
+  strokeWeight(3);
+  stroke(231, 125, 181);
+  fill(248, 185, 204);
+  ellipse(65,150,45,45);
+  noStroke();
+  ellipse(129,129,100,100);
+  ellipse(110,179,50,20);
 
 }
 

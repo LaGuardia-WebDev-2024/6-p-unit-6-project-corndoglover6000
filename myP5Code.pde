@@ -46,17 +46,55 @@ void draw(){
   stroke(231, 125, 181);
   fill(255,255,255);
   arc(50,110,60,60,radians(10),radians(100));
-  fill(248, 185, 204);
+  
+  //left eye
+  rotate(.2);
+  strokeWeight(3);
+  stroke(0,0,0);
+  arc(90,99,22,53,radians(272),radians(360));
+  stroke(231, 125, 181);
+  fill(255,255,255);
+  arc(89,99,22,53,radians(93),radians(272));
+  noStroke();
+  fill (67, 156, 204);
+  ellipse(90,103,19,43);
+  fill(0,0,0);
+  ellipse(92,103,15,30);
+  fill(255,255,255);
+  ellipse(95,99,10,20);
+  ellipse(85,110,6,10);
+  rotate(-.2);
   
   //ear
+  fill(248, 185, 204);
+  strokeWeight(3);
+  stroke(231, 125, 181);
   rotate(.3);
   arc(205,53,50,65, radians(270),radians (360));
   arc(205,53,50,65, radians(0), radians (90));
   arc(190,59,50,65, radians(290),radians (360));
   arc(210,58,50,75, radians(180), radians (270));
   rotate(-.3);
+  fill(248, 185, 204);
+  noStroke();
+  ellipse(129,129,106,100);
 
   //right eye
+  rotate(.8);
+  fill(255,255,255);
+  strokeWeight(3);
+  stroke(0,0,0);
+  arc(190,6,50,65,radians(170),radians(360));
+  noStroke();
+  ellipse(190,8,50,65);
+  fill (67, 156, 204);
+  ellipse(194,7,43,56);
+  fill(0,0,0);
+  ellipse(196,7,28,38);
+  rotate (-.8);
+  fill(255,255,255);
+  ellipse(144,139,20,30);
+  ellipse(125,145,7,10);
   
 }
 

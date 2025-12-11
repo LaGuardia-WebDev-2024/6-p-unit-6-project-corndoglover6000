@@ -39,9 +39,25 @@ void draw(){
   fill(248, 185, 204);
   ellipse(65,150,45,45);
   noStroke();
-  ellipse(129,129,100,100);
+  ellipse(129,129,110,100);
   ellipse(110,179,50,20);
+  rect(120,180,50,70);
+  strokeWeight(3);
+  stroke(231, 125, 181);
+  fill(255,255,255);
+  arc(50,110,60,60,radians(10),radians(100));
+  fill(248, 185, 204);
+  
+  //ear
+  rotate(.3);
+  arc(205,53,50,65, radians(270),radians (360));
+  arc(205,53,50,65, radians(0), radians (90));
+  arc(190,59,50,65, radians(290),radians (360));
+  arc(210,58,50,75, radians(180), radians (270));
+  rotate(-.3);
 
+  //right eye
+  
 }
 
 //🟡Extra FUN Features Ms. Hall Added

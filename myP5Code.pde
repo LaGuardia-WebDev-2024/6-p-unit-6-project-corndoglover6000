@@ -64,11 +64,17 @@ void draw(){
   ellipse(95,99,10,20);
   ellipse(85,110,6,10);
   rotate(-.2);
+  strokeWeight(2);
+  stroke(0,0,0);
+  fill(0,0,0,0);
+  arc(79,73,30,30, radians(100), radians(170));
+  arc(70,80,30,30, radians(105), radians(170));
   
   //ear
   fill(248, 185, 204);
   strokeWeight(3);
   stroke(231, 125, 181);
+  line(60,150,55,155);
   rotate(.3);
   arc(205,53,50,65, radians(270),radians (360));
   arc(205,53,50,65, radians(0), radians (90));
@@ -95,7 +101,35 @@ void draw(){
   fill(255,255,255);
   ellipse(144,139,20,30);
   ellipse(125,145,7,10);
-  
+  strokeWeight(2);
+  stroke(0,0,0);
+  fill(0,0,0,0);
+  arc(160,119,35,25, radians(45), radians(100));
+  arc(165,130,40,30, radians(60), radians(120));
+  arc(130,175,30,30, radians(320), radians(350));
+  arc(120,180,30,35, radians(320), radians(350));
+
+  //front hair
+  strokeWeight(3);
+  stroke(180, 44, 108);
+  fill(239, 80, 145);
+  arc(185,185,80,80, radians(150), radians(300));
+  arc(170,210,70,50, radians(300), radians(360));
+  arc(170,210,70,50, radians(0), radians(150));
+
+  //front front leg
+  strokeWeight(3);
+  stroke(231, 125, 181);
+  fill(248, 185, 204);
+  ellipse(85,385,55,10);
+  triangle(58,383,119,267,111,385);
+  triangle(112,385,119,267,138,275);
+  stroke(248, 185, 204);
+  line(60,383,110,385);
+  strokeWeight(4);
+  line(120,267,138,275);
+  line(120,269,110,386);
+
 }
 
 //🟡Extra FUN Features Ms. Hall Added

@@ -8,26 +8,34 @@ void setup() {
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
   fill(255,255,255);
+  
+ 
   strokeWeight(3);
   stroke(231, 125, 181);
-
-  //💡⬇️⬇️⬇️💡 Your Code For This Project Goes Here
-  
   //body
   fill(248, 185, 204);
   ellipse(175,240,150,100);
   ellipse(145,235,100,100);
   noStroke();
   ellipse(175,240,150,97);
+  fill(255,255,255);
+  ellipse(200,180,50,60);
+  fill(248, 185, 204);
   strokeWeight(3);
   stroke(231, 125, 181);
-  ellipse(210,235,80,95);
+  ellipse(220,240,75,80);
   noStroke();
   ellipse(183,227,60,70);
+  fill(119, 201, 248);
+  rotate(-.3);
+  ellipse(125,300,15,20);
+  triangle(123,316,126,308,133,315);
+  rotate(.3);
   
   //head
   strokeWeight(3);
   stroke(231, 125, 181);
+  fill(248, 185, 204);
   ellipse(123,130,125,125);
   ellipse(102,150,80,80);
   fill(255,255,255);
@@ -88,7 +96,7 @@ void draw(){
   //right eye
   rotate(.8);
   fill(255,255,255);
-  strokeWeight(3);
+  strokeWeight(4);
   stroke(0,0,0);
   arc(190,6,50,65,radians(170),radians(360));
   noStroke();
@@ -113,9 +121,21 @@ void draw(){
   strokeWeight(3);
   stroke(180, 44, 108);
   fill(239, 80, 145);
-  arc(185,185,80,80, radians(150), radians(300));
+  rotate(.6)
+  ellipse(250,110,50,35);
+  arc(240,80,50,35, radians(95), radians(230));
+  fill(248, 185, 204);
+  arc(262,95,50,35,radians(40), radians(150));
+  rotate(-.6);
+  stroke(180, 44, 108);
+  fill(239, 80, 145);
+  arc(205,157,70,40, radians(270), radians(360));
+  arc(205,157,70,65, radians(0), radians(120));
+  arc(190,185,80,80, radians(150), radians(300));
   arc(170,210,70,50, radians(300), radians(360));
   arc(170,210,70,50, radians(0), radians(150));
+  noStroke();
+  ellipse(170,205,60,50);
 
   //front front leg
   strokeWeight(3);

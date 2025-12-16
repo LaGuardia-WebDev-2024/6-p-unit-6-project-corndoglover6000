@@ -19,18 +19,33 @@ void draw(){
   noStroke();
   ellipse(175,240,150,97);
   fill(255,255,255);
-  ellipse(200,180,50,60);
+  ellipse(218,180,100,60);
   fill(248, 185, 204);
   strokeWeight(3);
   stroke(231, 125, 181);
-  ellipse(220,240,75,80);
+  ellipse(220,247,75,80);
+  triangle(199,280,232,306,251,270);
   noStroke();
   ellipse(183,227,60,70);
+  ellipse(220,265,58,40);
   fill(119, 201, 248);
   rotate(-.3);
   ellipse(125,300,15,20);
   triangle(123,316,126,308,133,315);
   rotate(.3);
+  rotate(.3);
+  ellipse(303,168,15,20);
+  triangle(304,170,306,184,298,185);
+  rotate(-.3);
+  strokeWeight(2);
+  stroke(119, 201, 248);
+  line(221,240,226,254);
+  fill(250, 245, 154);
+  stroke(250, 245, 154);
+  line(215,264,219,278);
+  line(235,265,235,279);
+  ellipse(218,225,12,20);
+  triangle(218,234,218,240,225,240);
   
   //head
   strokeWeight(3);

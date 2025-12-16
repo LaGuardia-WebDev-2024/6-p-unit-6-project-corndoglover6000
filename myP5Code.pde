@@ -28,6 +28,19 @@ void draw(){
   noStroke();
   ellipse(183,227,60,70);
   ellipse(220,265,58,40);
+
+  //front hind leg
+  strokeWeight(3);
+  stroke(231, 125, 181);
+  curve(153,252,253,284,290,389,266,430);
+  triangle(253,284,239,292,235,302);
+  ellipse(263,389,55,9);
+  noStroke();
+  triangle(223,295,252,287,236,307);
+  
+
+  //cutie mark
+  noStroke();
   fill(119, 201, 248);
   rotate(-.3);
   ellipse(125,300,15,20);
@@ -39,13 +52,34 @@ void draw(){
   rotate(-.3);
   strokeWeight(2);
   stroke(119, 201, 248);
-  line(221,240,226,254);
+  noFill();
+  beginShape();
+  curveVertex(226,  240);
+  curveVertex(219,  240);
+  curveVertex(226,  256);
+  curveVertex(225,  268);
+  curveVertex(220, 264);
+  endShape();
   fill(250, 245, 154);
   stroke(250, 245, 154);
-  line(215,264,219,278);
-  line(235,265,235,279);
   ellipse(218,225,12,20);
   triangle(218,234,218,240,225,240);
+  noFill();
+  beginShape();
+  curveVertex(210,  260);
+  curveVertex(215,  265);
+  curveVertex(213,  276);
+  curveVertex(219,  285);
+  curveVertex(221, 274);
+  curveVertex(132, 200);
+  endShape();
+  beginShape();
+  curveVertex(245,  220);
+  curveVertex(233,  265);
+  curveVertex(238,  286);
+  curveVertex(232,  291);
+  curveVertex(221, 274);
+  endShape();
   
   //head
   strokeWeight(3);
@@ -132,7 +166,7 @@ void draw(){
   arc(130,175,30,30, radians(320), radians(350));
   arc(120,180,30,35, radians(320), radians(350));
 
-  //front hair
+  //front hair neck
   strokeWeight(3);
   stroke(180, 44, 108);
   fill(239, 80, 145);
@@ -152,7 +186,7 @@ void draw(){
   noStroke();
   ellipse(170,205,60,50);
 
-  //front front leg
+  //front fore leg
   strokeWeight(3);
   stroke(231, 125, 181);
   fill(248, 185, 204);

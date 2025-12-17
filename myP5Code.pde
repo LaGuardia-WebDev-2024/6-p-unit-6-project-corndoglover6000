@@ -53,7 +53,9 @@ void draw(){
   //tail
   fill(239, 80, 145);
   noStroke();
-  triangle();
+  ellipse(336,257,80,80);
+  ellipse(355,300,65,55);
+  ellipse(310,214,60,40);
   strokeWeight(3);
   stroke(180, 44, 108);
   rotate(-.6);

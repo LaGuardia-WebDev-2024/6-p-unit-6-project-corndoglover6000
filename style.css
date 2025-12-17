@@ -1,15 +1,11 @@
 body {
-   background-image: linear-gradient(
-    to right, /* or 'to bottom' for horizontal stripes, or an angle like 45deg */
-    #DAA928 0%, /* Red starts at 0% */
-    #FB8931 25%, /* Red ends at 25% */
-    #E7541E 35%, /* Blue starts at 25% */
-    #509844 50%, /* Blue ends at 50% */
-    #D03499 60%, /* Green starts at 50% */
-    #1E7BC9 75%, /* Green ends at 75% */
-    #B121B6 85%, /* Yellow starts at 75% */
-    #DD133B 100% /* Yellow ends at 100% */
-  );
+  background-image: url(https://static.wikia.nocookie.net/mlp/images/0/04/Frame_of_empty_Ponyville_street_S1E20.png/revision/latest/scale-to-width-down/985?cb=20130711202024);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: auto;
 }
 
 html{
@@ -18,8 +14,7 @@ html{
 }
 
 #myCanvas {
-  border-radius: 30px;
-  border: 15px double rgb(0, 0, 0);
+  border: 5px outset rgb(231, 231, 231);
 }
 
 .container{
@@ -29,19 +24,13 @@ html{
   justify-content: space-around;
   align-items: flex-start;
   padding-bottom: 60px;
-  border-radius: 30px;
 }
 
 .pic{
   height: 400px;
   width: 400px;
   object-fit: cover;
-  border-radius: 30px;
-  border: 15px double rgb(0, 0, 0);
-}
-
-h2{
-  color: black;
+  border: 5px outset rgb(231, 231, 231);
 }
 
 #start{
@@ -50,4 +39,22 @@ h2{
 
 #end{
   text-align: right;
+}
+
+h2, p {
+  font-family: "Fontdiner Swanky", serif;
+  color: rgb(239, 80, 145); 
+}
+
+.fontdiner-swanky-regular {
+  font-family: "Fontdiner Swanky", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+div {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  max-width: 1000px;
 }

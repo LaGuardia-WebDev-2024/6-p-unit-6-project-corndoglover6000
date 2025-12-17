@@ -51,14 +51,23 @@ void draw(){
   ellipse(218,180,190,120);
 
   //tail
+  fill(239, 80, 145);
+  noStroke();
+  triangle();
   strokeWeight(3);
   stroke(180, 44, 108);
-  fill(239, 80, 145);
   rotate(-.6);
   arc(123,335,120,90, radians(200), radians(360));
   arc(123,335,120,90, radians(0), radians(50));
+  arc(155,398,100,70, radians(275), radians(360));
+  arc(155,398,100,95, radians(0), radians(100));
+  arc(123,435,120,95, radians(110), radians(240));
+  arc(125,458,65,65, radians(0), radians(80));
+  arc(125,458,65,50, radians(320), radians(360));
   rotate(.6);
   arc(317,239,100,80, radians(110),radians(230))
+  fill(255,255,255);
+  curve(215,317,237,232,285,205,384,225);
 
   //body 2
   fill(248, 185, 204);

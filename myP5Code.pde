@@ -12,15 +12,32 @@ void draw(){
   stroke(231, 125, 181);
   
   //back hind leg
-  noFill();
-  curve(15,380,187,289,218,377,139,390);
   fill(233, 158, 196);
   ellipse(233,380,30,10);
   noStroke();
   triangle(190,289,222,271,210,299);
   triangle(210,299,219,235)
+  ellipse(224,303,30,30);
+  rect(221,315,30,64);
+  triangle(214,310,221,334,244,295);
+  strokeWeight(3);
+  stroke(231, 125, 181);
+  noFill();
+  curve(15,380,187,289,218,377,139,390);
+
+  //back fore leg
+  fill(233, 158, 196);
+  noStroke();
+  triangle(0,280,94,249,29,321);
+  triangle(94,249,29,321,107,268);
+  strokeWeight(3);
+  stroke(231, 125, 181);
+  line(107,268,30,321);
+  line(94,249,0,280);
+  curve(22,195,0,280,29,321,109,335);
   
-  //body
+
+  //body 1
   strokeWeight(3);
   stroke(231, 125, 181);
   fill(248, 185, 204);
@@ -29,13 +46,27 @@ void draw(){
   rotate(.2)
   ellipse(145,235,100,100);
   noStroke();
-  ellipse(175,240,150,97);
+  ellipse(170,240,140,95);
   fill(255,255,255);
-  ellipse(218,180,140,90);
+  ellipse(218,180,190,120);
+
+  //tail
+  strokeWeight(3);
+  stroke(180, 44, 108);
+  fill(239, 80, 145);
+  rotate(-.6);
+  arc(123,335,120,90, radians(200), radians(360));
+  arc(123,335,120,90, radians(0), radians(50));
+  rotate(.6);
+  arc(317,239,100,80, radians(110),radians(230))
+
+  //body 2
   fill(248, 185, 204);
   strokeWeight(3);
   stroke(231, 125, 181);
-  ellipse(220,247,75,80);
+  rotate(-.3);
+  ellipse(140,300,60,80);
+  rotate(.3)
   triangle(199,280,232,306,251,270);
   noStroke();
   ellipse(183,227,60,70);
@@ -55,7 +86,6 @@ void draw(){
   stroke(231, 125, 181);
   noFill();
   curve(148,286,229,306,236,389,194,430);
-  
 
   //cutie mark
   noStroke();

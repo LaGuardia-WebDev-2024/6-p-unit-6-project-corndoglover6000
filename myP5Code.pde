@@ -8,18 +8,30 @@ void setup() {
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
   fill(255,255,255);
-  
- 
   strokeWeight(3);
   stroke(231, 125, 181);
+  
+  //back hind leg
+  noFill();
+  curve(15,380,187,289,218,377,139,390);
+  fill(233, 158, 196);
+  ellipse(233,380,30,10);
+  noStroke();
+  triangle(190,289,222,271,210,299);
+  triangle(210,299,219,235)
+  
   //body
+  strokeWeight(3);
+  stroke(231, 125, 181);
   fill(248, 185, 204);
-  ellipse(175,240,150,100);
+  rotate(-.2)
+  ellipse(125,269,150,100);
+  rotate(.2)
   ellipse(145,235,100,100);
   noStroke();
   ellipse(175,240,150,97);
   fill(255,255,255);
-  ellipse(218,180,100,60);
+  ellipse(218,180,140,90);
   fill(248, 185, 204);
   strokeWeight(3);
   stroke(231, 125, 181);
@@ -37,6 +49,12 @@ void draw(){
   ellipse(263,389,55,9);
   noStroke();
   triangle(223,295,252,287,236,307);
+  triangle(253,286,238,388,289,389);
+  triangle(233,307,253,286,242,357);
+  strokeWeight(3);
+  stroke(231, 125, 181);
+  noFill();
+  curve(148,286,229,306,236,389,194,430);
   
 
   //cutie mark

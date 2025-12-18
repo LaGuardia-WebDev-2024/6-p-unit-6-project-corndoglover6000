@@ -13,8 +13,9 @@ html{
   width: 100%;
 }
 
-#myCanvas {
-  border: 5px outset rgb(231, 231, 231);
+
+#myCanvas:hover {
+  box-shadow: 0 0 5px 0 rgb(239, 80, 145), 0 0 20px 0 rgb(239, 80, 145);transition: all 200ms ease-out;
 }
 
 .container{
@@ -30,7 +31,10 @@ html{
   height: 400px;
   width: 400px;
   object-fit: cover;
-  border: 5px outset rgb(231, 231, 231);
+}
+
+.pic:hover {
+  box-shadow: 0 0 5px 0 rgb(239, 80, 145), 0 0 20px 0 rgb(239, 80, 145);transition: all 200ms ease-out;
 }
 
 #start{

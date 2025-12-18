@@ -15,7 +15,9 @@ html{
 
 
 #myCanvas:hover {
-  box-shadow: 0 0 5px 0 rgb(239, 80, 145), 0 0 20px 0 rgb(239, 80, 145);transition: all 200ms ease-out;
+  animation-name: myAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 .container{
@@ -34,7 +36,9 @@ html{
 }
 
 .pic:hover {
-  box-shadow: 0 0 5px 0 rgb(239, 80, 145), 0 0 20px 0 rgb(239, 80, 145);transition: all 200ms ease-out;
+  animation-name: myAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 #start{
@@ -62,3 +66,11 @@ div {
   padding: 5px;
   max-width: 1000px;
 }
+
+@keyframes myAnimation {
+  0%   {box-shadow: 0 0 8px 0 rgb(244, 62, 62),0 0 8px 0 rgb(244, 62, 62)}
+  25%  {box-shadow: 0 0 8px 0 rgb(255, 255, 107), 0 0 8px 0 rgb(255, 255, 107)}
+  50%  {box-shadow: 0 0 8px 0 rgb(117, 239, 80), 0 0 8px 0 rgb(117, 239, 80)}
+  75%  {box-shadow: 0 0 8px 0 rgb(80, 93, 239), 0 0 8px 0 rgb(80, 167, 239)}
+  100% {box-shadow: 0 0 8px 0 rgb(244, 62, 180), 0 0 8px 0 rgb(244, 62, 180)}
+  }

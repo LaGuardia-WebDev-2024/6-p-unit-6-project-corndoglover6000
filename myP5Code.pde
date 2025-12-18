@@ -154,19 +154,25 @@ void draw(){
   curveVertex(221, 274);
   endShape();
   
-  //top hair
+  //back hair
   fill(239, 80, 145);
   noStroke();
   ellipse(192,135,40,43);
   ellipse(152,70,74,70)
+  triangle(39,87,23,82,14,58);
+  ellipse(52,46,80,74);
   strokeWeight(3);
   stroke(180, 44, 108);
-  curve(65,239,177,52, 213, 136, 0, 276)
+  curve(-30,339,177,52, 213, 136, -100, 276)
   rotate(.2)
-  arc(157,6,60,45, radians(170), radians(360));
-  arc(157,6,60,45, radians(0), radians(20));
+  arc(154,6,68,65, radians(170), radians(360));
+  arc(157,6,60,55, radians(0), radians(20));
   rotate(-.2)
-  
+  fill(239, 80, 145);
+  curve(50,0,39,87,4,77,-20,0);
+  noFill();
+  curve(0,0,23,76,4,77,0,50);
+
   //head
   strokeWeight(3);
   stroke(231, 125, 181);
@@ -189,12 +195,29 @@ void draw(){
   stroke(231, 125, 181);
   fill(255,255,255);
   arc(50,110,60,60,radians(10),radians(100));
-
+  
   //front hair
+  noStroke();
+  fill(239, 80, 145);
+  triangle(99,83,140,71,135,21);
+  triangle(99,83,135,21,85,56);
+  triangle(91,32,104,45,84,56);
   strokeWeight(3);
   stroke(180, 44, 108);
+  arc(102,45,35,30, radians(240), radians(320));
   noFill();
-  curve(61,177,108,85,154,76,261,130);
+  curve(1,167,100,85,154,76,201,130);
+  rotate(.3);
+  arc(85,53,67,45, radians(130), radians(360))
+  fill(255,255,255)
+  arc(85,53,67,45, radians(130), radians(320))
+  noStroke();
+  ellipse(81,55,37,26);
+  rotate(-.3);
+  noFill();
+  strokeWeight(3);
+  stroke(180, 44, 108);
+  curve(355,491,22,78,91,32,101,297);
   
   //left eye
   fill(255,255,255);
@@ -219,7 +242,7 @@ void draw(){
   fill(0,0,0,0);
   arc(79,73,30,30, radians(100), radians(170));
   arc(70,80,30,30, radians(105), radians(170));
-  
+
   //ear
   fill(248, 185, 204);
   strokeWeight(3);
